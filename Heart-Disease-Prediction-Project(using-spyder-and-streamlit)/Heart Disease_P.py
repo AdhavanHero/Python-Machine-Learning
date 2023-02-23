@@ -11,7 +11,7 @@ import numpy as np
 import streamlit as st
 
 
-loaded_model=pickle.load(open("C:\Machine learning Projects\Heart Disease Prediction Project (using spyder and streamlit)\Heart-Disease-Prediction-Project--using-spyder-and-streamlit-\Heart-Disease-Prediction-Project(using-spyder-and-streamlit)\heart_disease.sav","rb"))
+loaded_model=pickle.load(open("heart_disease.sav","rb"))
 def heart_disease_prediction(input_data):
     input_data_np_array=np.asarray(input_data)
     input_data_reshape=input_data_np_array.reshape(1,-1)
